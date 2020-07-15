@@ -8,7 +8,6 @@ COPY rootCA.crt /usr/local/squid/etc/
 COPY squid.conf /usr/local/squid/etc/
 
 # Create cache folder
-CMD /usr/local/squid/sbin/squid -z
 CMD /usr/local/squid/libexec/security_file_certgen -c -s /usr/local/squid/var/logs/ssl_db -M 16MB
 CMD chown -R proxy.proxy /usr/local/squid
 
