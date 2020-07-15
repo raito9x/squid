@@ -3,3 +3,4 @@
 chmod o+w /usr/local/squid/var/logs/cache.log
 chown -R proxy.proxy /usr/local/squid
 /usr/local/squid/sbin/squid -f /usr/local/squid/etc/squid.conf
+cc
