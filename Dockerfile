@@ -13,4 +13,4 @@ RUN /usr/local/squid/libexec/security_file_certgen -c -s /usr/local/squid/var/lo
 RUN chown -R proxy.proxy /usr/local/squid
 
 EXPOSE 3128
-ENTRYPOINT [ "/usr/local/squid/sbin/squid", "--foreground"]
+ENTRYPOINT [ "/bin/bash", "/root/entrypoint.sh" ]
