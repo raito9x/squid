@@ -14,5 +14,5 @@ RUN chown -R proxy.proxy /usr/local/squid
 
 EXPOSE 3128
 #ENTRYPOINT [ "/bin/bash", "/root/entrypoint.sh" ]
-#ENTRYPOINT [ "/usr/local/squid/sbin/squid", "--foreground" ]
-ENTRYPOINT [ "/usr/local/squid/sbin/squid", "-f", "/usr/local/squid/etc/squid.conf", "-NYCd 1" ]
+ENTRYPOINT [ "/usr/local/squid/sbin/squid", "--foreground" ]
+#ENTRYPOINT [ "/usr/local/squid/sbin/squid", "-f", "/usr/local/squid/etc/squid.conf", "-NYCd 1" ]
