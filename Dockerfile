@@ -1,5 +1,4 @@
-FROM ubuntu:18.04
-RUN apt update && apt -y upgrade
+FROM raito9x/ubuntu:18.04
 WORKDIR /root
 
 # Copy running file and config
