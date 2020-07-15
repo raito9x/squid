@@ -1,6 +1,5 @@
-FROM raito9x/ubuntu:18.04
+FROM ubuntu:18.04
 RUN apt update && apt -y upgrade
-RUN apt install -y vim iputils-ping telnet
 WORKDIR /root
 
 # Copy running file and config
